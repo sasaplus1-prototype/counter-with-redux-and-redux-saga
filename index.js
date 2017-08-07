@@ -48,6 +48,7 @@
     yield ReduxSaga.effects.takeEvery('INCREMENT_ASYNC', incrementAsync);
   }
 
+  // NOTE: redux-saga uses ES2015 import/export
   sagaMiddleware = ReduxSaga.default();
 
   store = Redux.createStore(
